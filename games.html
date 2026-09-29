@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PG CLOUD GAMING - Game Library</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="games-page">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="brand">
+                <span>PG</span> CLOUD GAMING
+            </div>
+
+            <button
+                class="back-btn"
+                onclick="goDashboard()">
+                ← DASHBOARD
+            </button>
+
+        </header>
+
+
+        <!-- GAME LIBRARY -->
+        <main class="games-content">
+
+            <div class="library-header">
+
+                <h1>
+                    GAME <span>LIBRARY</span>
+                </h1>
+
+                <p>
+                    CHOOSE YOUR GAME. ENTER YOUR WORLD.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+            <div class="game-search">
+
+                <input
+                    type="text"
+                    id="gameSearch"
+                    placeholder="🔍 Search games..."
+                    oninput="searchGames()">
+
+            </div>
+
+
+            <!-- GAMES -->
+            <div
+                class="games-grid"
+                id="gamesGrid">
+
+
+                <!-- GAME 1 -->
+                <div
+                    class="game-card"
+                    data-name="GTA Vice City">
+
+                    <div class="game-image">
+
+                        <img
+    src="images/gta-vc.jpg"
+    alt="GTA Vice City">
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h2>GTA VICE CITY</h2>
+
+                        <p>Action • Open World</p>
+
+                        <button
+                            class="play-btn"
+                            onclick="playGame('GTA Vice City')">
+                            ▶ PLAY NOW
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GAME 2 -->
+                <div
+                    class="game-card"
+                    data-name="Need for Speed">
+
+                    <div class="game-image">
+
+                        <img
+                            src="images/nfs.jpg"
+                            alt="Need for Speed">
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h2>NEED FOR SPEED</h2>
+
+                        <p>Racing • Cars</p>
+
+                        <button
+                            class="play-btn"
+                            onclick="playGame('Need for Speed')">
+                            ▶ PLAY NOW
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GAME 3 -->
+                <div
+                    class="game-card"
+                    data-name="God of War">
+
+                    <div class="game-image">
+
+                        <img
+    src="images/god-of-war.jpg"
+                            alt="God of War">
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <h2>GOD OF WAR</h2>
+
+                        <p>Action • Adventure</p>
+
+                        <button
+                            class="play-btn"
+                            onclick="playGame('God of War')">
+                            ▶ PLAY NOW
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="games.js"></script>
+
+</body>
+
+</html>

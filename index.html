@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PG CLOUD GAMING</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <div class="logo">
+                <span>PG</span>
+                <h1>CLOUD GAMING</h1>
+            </div>
+
+            <p class="subtitle">
+                YOUR GAMES. YOUR CLOUD. YOUR WORLD.
+            </p>
+
+          <button class="google-btn" onclick="googleLogin()">
+    <img
+        src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+        alt="Google"
+        class="google-icon"
+    >
+    <span>Sign in with Google</span>
+</button>
+
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <button class="login-btn" onclick="login()">
+                LOGIN
+            </button>
+
+            <p class="signup-text">
+                Don't have an account?
+                <span onclick="window.location.href='register.html'">
+    Create Account
+</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

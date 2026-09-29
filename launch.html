@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>PG CLOUD GAMING - Launch</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="launch-page">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="brand">
+                <span>PG</span> CLOUD GAMING
+            </div>
+
+            <button
+                class="back-btn"
+                onclick="goGames()">
+
+                ← GAME LIBRARY
+
+            </button>
+
+        </header>
+
+
+        <!-- LAUNCH AREA -->
+
+        <main class="launch-content">
+
+
+            <div class="launch-card">
+
+
+                <!-- GAME IMAGE -->
+
+                <div class="launch-image">
+
+                    <img
+                        id="gameImage"
+                        src=""
+                        alt="Game">
+
+                </div>
+
+
+                <!-- GAME DETAILS -->
+
+                <div class="launch-details">
+
+                    <div class="status">
+
+                        <span class="status-dot"></span>
+
+                        SERVER READY
+
+                    </div>
+
+
+                    <h1 id="gameTitle">
+                        Loading...
+                    </h1>
+
+
+                    <p id="gameCategory">
+                        Cloud Gaming
+                    </p>
+
+
+                    <div class="specs">
+
+                        <div class="spec">
+
+                            <span>⚡</span>
+
+                            <div>
+                                <small>LATENCY</small>
+                                <strong>LOW</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="spec">
+
+                            <span>🖥️</span>
+
+                            <div>
+                                <small>STREAM</small>
+                                <strong>READY</strong>
+                            </div>
+
+                        </div>
+
+
+                        <div class="spec">
+
+                            <span>🎮</span>
+
+                            <div>
+                                <small>CONTROLLER</small>
+                                <strong>SUPPORTED</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- START -->
+
+                    <button
+                        class="start-game-btn"
+                        onclick="startGame()">
+
+                        ▶ START CLOUD GAMING
+
+                    </button>
+
+
+                    <p class="launch-note">
+
+                        Your cloud gaming session will start here.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="launch.js"></script>
+
+</body>
+
+</html>

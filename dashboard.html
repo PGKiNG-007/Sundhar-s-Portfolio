@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PG CLOUD GAMING - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="brand">
+                <span>PG</span> CLOUD GAMING
+            </div>
+
+            <button class="logout-btn" onclick="logout()">
+                LOGOUT
+            </button>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <main class="dashboard-content">
+
+            <!-- PROFILE -->
+            <div class="profile-card">
+
+                <img
+                    id="profilePhoto"
+                    src=""
+                    alt="Profile"
+                    class="profile-photo"
+                    referrerpolicy="no-referrer"
+                >
+
+                <h2 id="userName">Loading...</h2>
+
+            </div>
+
+
+            <!-- WELCOME -->
+            <div class="welcome">
+
+                <h1>
+                    WELCOME TO
+                    <span>PG CLOUD GAMING</span>
+                </h1>
+
+                <h2 id="welcomeUser">
+                    Loading...
+                </h2>
+
+                <p>
+                    YOUR GAMES. YOUR CLOUD. YOUR WORLD.
+                </p>
+
+            </div>
+
+
+            <!-- GAME LIBRARY -->
+            <div class="game-section">
+
+                <button
+                    class="library-btn"
+                    onclick="openGameLibrary()"
+                >
+                    🎮 GAME LIBRARY
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script type="module" src="dashboard.js"></script>
+
+</body>
+
+</html>

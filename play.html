@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>PG CLOUD GAMING - Playing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="play-page">
+
+        <!-- TOP BAR -->
+
+        <header class="play-topbar">
+
+            <div class="brand">
+                <span>PG</span> CLOUD GAMING
+            </div>
+
+
+            <div class="playing-info">
+
+                <span class="live-dot"></span>
+
+                <span id="playingGame">
+                    CONNECTING...
+                </span>
+
+            </div>
+
+
+            <button
+                class="exit-btn"
+                onclick="exitGame()">
+
+                EXIT GAME
+
+            </button>
+
+        </header>
+
+
+        <!-- GAME STREAM AREA -->
+
+        <main class="game-stream">
+
+            <div class="stream-screen">
+
+
+                <!-- TEMPORARY CLOUD SCREEN -->
+
+                <div class="cloud-loading">
+
+                    <div class="cloud-icon">
+                        ☁️
+                    </div>
+
+
+                    <h1>
+                        CLOUD GAMING
+                    </h1>
+
+
+                    <p id="gameName">
+                        Connecting to game...
+                    </p>
+
+
+                    <div class="loading-bar">
+
+                        <div
+                            class="loading-progress">
+                        </div>
+
+                    </div>
+
+
+                    <p class="connection-text">
+                        Establishing secure game session...
+                    </p>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="stream-controls">
+
+                    <button onclick="toggleFullscreen()">
+                        ⛶
+                    </button>
+
+                    <button onclick="toggleControls()">
+                        🎮
+                    </button>
+
+                    <button onclick="showSettings()">
+                        ⚙
+                    </button>
+
+                    <button onclick="exitGame()">
+                        ✕
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- BOTTOM STATUS -->
+
+        <footer class="stream-footer">
+
+            <div>
+                🟢 CONNECTION
+                <strong>GOOD</strong>
+            </div>
+
+            <div>
+                ⚡ LATENCY
+                <strong id="latency">-- ms</strong>
+            </div>
+
+            <div>
+                🖥️ STREAM
+                <strong>1080P</strong>
+            </div>
+
+            <div>
+                🎮 INPUT
+                <strong>READY</strong>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="play.js"></script>
+
+</body>
+
+</html>
